@@ -13,16 +13,15 @@ DROP TABLE IF EXISTS zillow_data CASCADE;
 CREATE TABLE regions (
     region_id INTEGER,
     region_type VARCHAR(10),
-    region VARCHAR(100),
+    region VARCHAR(255),
     PRIMARY KEY (region_id)
 );
 
 CREATE TABLE indicators (
     indicator_id CHAR(4),
-    indicator VARCHAR(100),
+    indicator VARCHAR(255),
     category VARCHAR(20),
     PRIMARY KEY (indicator_id)
-
 );
 
 CREATE TABLE zillow_data (
