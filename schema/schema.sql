@@ -9,6 +9,7 @@
 DROP TABLE IF EXISTS regions CASCADE;
 DROP TABLE IF EXISTS indicators CASCADE;
 DROP TABLE IF EXISTS zillow_data CASCADE;
+DROP TABLE IF EXISTS zip_zone CASCADE;
 
 CREATE TABLE regions (
     region_id INTEGER,
@@ -31,4 +32,10 @@ CREATE TABLE zillow_data (
     avg_value REAL,
     FOREIGN KEY (indicator_id) REFERENCES indicators(indicator_id),
     FOREIGN KEY (region_id) REFERENCES regions(region_id)
+);
+
+CREATE TABLE zip_zone (
+    zipcode INTEGER,
+    city VARCHAR(20),
+    PRIMARY KEY (zipcode)
 );
