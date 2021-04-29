@@ -11,21 +11,23 @@ Identify growing,overvalued, and undervalued areas in
 houston-austin-dallas
 
 ## Outline/description
-We will be combining historical Zillow real estate data and historical IRS Income data by zip code to ID areas with undervalued and overvalued properties
+We will be combining historical Zillow real estate data and historical IRS Income data by zip code to ID areas with undervalued and overvalued properties.
 
 The focus will be on Houston-Dallas-Austin
 
 ## Research questions to answer
-Is there a pattern in the amount of time it takes for an undervalued area to equalize?
+1. Does a correlation exist between average income and average housing price?
 
-Does one city typically have more undervalued areas?
+2. Is there a pattern in the amount of time it takes for an undervalued area to equalize?
 
-Are certain types of properties more likely to be over or undervalued?
+3. Does one city typically have more undervalued areas?
+
+4. Are certain types of properties more likely to be over or undervalued?
 
 ## Datasets to be used
-Quandl zillow real estate data
+- Quandl zillow real estate data
 
-IRS income data by zip code for TX
+- IRS income data by zip code for TX
 
 ## Rough breakdown of tasks
 1. For all tx zips, get salary data & zillow home price data
@@ -37,5 +39,6 @@ IRS income data by zip code for TX
     - Pick useful statistics to start determining zones for comparison of salary:real_estate ratios 
 5. Plots
     - Box and whisker
+    - scatter mapbox with animation or slider by year
 
 
