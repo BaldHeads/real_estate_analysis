@@ -49,3 +49,14 @@ SELECT z.date, r.region, z.avg_value, zip_zone.zipcode, zip_zone.city FROM zillo
 WHERE r.region_type='zip'
 	AND z.indicator_id='ZALL'
 ORDER BY r.region, z.date
+
+SELECT z.date, r.region, z.avg_value, zip_zone.zipcode, zip_zone.city FROM zillow_data AS z 
+	INNER JOIN regions AS r 
+	ON r.region_id=z.region_id 
+    INNER JOIN (SELECT zipcode FROM zip_zone) as zip
+    ON r.region LIKE CAST (zipcode AS VARCHAR) || '%'
+	INNER JOIN zip_zone
+	ON zip.zipcode=zip_zone.zipcode
+WHERE r.region_type='zip'
+	AND z.indicator_id='RSNA'
+ORDER BY r.region, z.date
