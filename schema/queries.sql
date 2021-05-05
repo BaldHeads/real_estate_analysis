@@ -71,3 +71,22 @@ SELECT z.date, r.region, z.avg_value, zip_zone.zipcode, zip_zone.city FROM zillo
 WHERE r.region_type='zip'
 	AND z.indicator_id='ZCON'
 ORDER BY r.region, z.date
+
+--Citywide metro queries
+SELECT * FROM regions WHERE region_type='metro' AND region LIKE '%TX'
+--THIS RETURNS:
+--region_id region_type region
+--394514	"metro"	"Dallas-Fort Worth, TX"
+--394692	"metro"	"Houston, TX"
+--395055	"metro"	"San Antonio, TX"
+--394355	"metro"	"Austin, TX"
+
+SELECT z.date, r.region, z.avg_value FROM zillow_data AS z 
+	INNER JOIN regions AS r 
+	ON r.region_id=z.region_id 
+WHERE (r.region_id=394514
+		OR r.region_id=394692
+		OR r.region_id=395055
+		OR r.region_id=394355)
+	AND z.indicator_id='ZALL'
+ORDER BY r.region, z.date
