@@ -90,3 +90,23 @@ WHERE (r.region_id=394514
 		OR r.region_id=394355)
 	AND z.indicator_id='ZALL'
 ORDER BY r.region, z.date
+
+SELECT z.date, r.region, z.avg_value FROM zillow_data AS z 
+	INNER JOIN regions AS r 
+	ON r.region_id=z.region_id 
+WHERE (r.region_id=394514
+		OR r.region_id=394692
+		OR r.region_id=395055
+		OR r.region_id=394355)
+	AND z.indicator_id='ZCON'
+ORDER BY r.region, z.date
+
+SELECT z.date, r.region, z.avg_value FROM zillow_data AS z 
+	INNER JOIN regions AS r 
+	ON r.region_id=z.region_id 
+WHERE (r.region_id=394514
+		OR r.region_id=394692
+		OR r.region_id=395055
+		OR r.region_id=394355)
+	AND z.indicator_id='RSNA'
+ORDER BY r.region, z.date
