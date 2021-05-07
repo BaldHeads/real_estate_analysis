@@ -9,4 +9,18 @@ General Findings:
  
  
  Summary of workload split:
+
+Ankur
+
+ 1. 
+
+Ahsan
+
+ 1. 
+
+Jordan
+
+ 1. Proposal
+ 2. Opportunity Ratio idea
+ 3. Dashboard app & visualization cosmetics
  
