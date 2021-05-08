@@ -31,11 +31,11 @@ Ankur
 Ahsan
 
  1. Pandas data cleanup
- 2. Static plots and mapbox animation
+ 2. [Static plots and mapbox animation](notebooks/ahsan.ipynb)
 
 Jordan
 
- 1. Proposal
- 2. Opportunity Ratio calculation
- 3. Dashboard app & visualization cosmetics
+ 1. [Proposal](proposal.md)
+ 2. [Opportunity Ratio calculation](jordan.ipynb)
+ 3. [Dashboard app & visualization cosmetics](presentation/dashboard_template.ipynb)
  
