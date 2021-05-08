@@ -15,12 +15,12 @@ General Findings:
 Ankur
 
  1. SQL query for data file size reduction & narrowing scope to texas
-     * [Database Creation and Schema](schema/scheme.sql)
+     * [Database Creation and Schema](schema/schema.sql)
      * [Zillow Data Import](schema/seed.sql) - The Zillow CSV was 3.7 GB, so I had to split the CSV into 5 files to get under the pgAdmin limit of 1 GB per file
          * ZALL - Category includes all single-family house, and condos
          * ZCON - Category for just condos
          * RSNA - Category for rentals
-     * [Queries](schema/queries) - Shows the various queries used to limit data to Texas and the 5 city Zip Codes
+     * [Queries](schema/queries.sql) - Shows the various queries used to limit data to Texas and the 5 city Zip Codes
  2. Pandas merging data
      * [Initial pandas Merge](notebooks/ankur.ipynb)
  3. Choropleths
