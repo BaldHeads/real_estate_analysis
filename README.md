@@ -20,8 +20,7 @@ Subtasks:
 
  2. Pandas data cleanup
 
- 3. Pandas merging data
-     * [Initial pandas Merge](notebooks/ankur.ipynb)
+ 3. [Pandas merging data](notebooks/ankur.ipynb)
 
  4. [Opportunity Ratio calculation](jordan.ipynb)
 
