@@ -17,21 +17,22 @@ Subtasks:
          * ZCON - Category for just condos
          * RSNA - Category for rentals
      * [Queries](schema/queries.sql) - Shows the various queries used to limit data to Texas and the 5 city Zip Codes
- 2. Pandas merging data
+
+ 2. Pandas data cleanup
+
+ 3. Pandas merging data
      * [Initial pandas Merge](notebooks/ankur.ipynb)
- 3. Choropleths
+
+ 4. [Opportunity Ratio calculation](jordan.ipynb)
+
+ 5. [Static plots and mapbox animation](notebooks/ahsan.ipynb)
+
+ 6. Choropleths
      * [ZALL for 4 Cities](notebooks/chloro-zall.ipynb)
      * [ZCON for 4 Cities](notebooks/chloro-zcon.ipynb)
      * [RSNA for 4 Cities](notebooks/chloro-rental.ipynb)
 
+ 7. [Dashboard app & visualization cosmetics](presentation/dashboard_template.ipynb)
 
 
-
- 1. Pandas data cleanup
- 2. [Static plots and mapbox animation](notebooks/ahsan.ipynb)
-
-
- 1. [Proposal](proposal.md)
- 2. [Opportunity Ratio calculation](jordan.ipynb)
- 3. [Dashboard app & visualization cosmetics](presentation/dashboard_template.ipynb)
  
